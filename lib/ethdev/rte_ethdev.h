@@ -5862,6 +5862,8 @@ rte_eth_rx_burst(uint16_t port_id, uint16_t queue_id,
 	struct rte_eth_fp_ops *p;
 	void *qd;
 
+	RTE_ETHDEV_LOG(ERR, "varlogen >> call rx_burst\n");
+
 #ifdef RTE_ETHDEV_DEBUG_RX
 	if (port_id >= RTE_MAX_ETHPORTS ||
 			queue_id >= RTE_MAX_QUEUES_PER_PORT) {
